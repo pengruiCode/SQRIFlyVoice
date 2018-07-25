@@ -7,14 +7,13 @@
 //
 
 #import "IFlyVoice.h"
-#import "SQREXDefine.h"
 
 @implementation IFlyVoice
 
 - (id) initWithShowVC:(UIViewController *)vc{
     //单例模式，无UI的实例
     if (_iflyRecognizerView == nil) {
-        _iflyRecognizerView = [[IFlyRecognizerView alloc] initWithCenter:CGPointMake(DEF_SCREEN_WIDTH / 2, DEF_SCREENH_HEIGHT / 2)];
+        _iflyRecognizerView = [[IFlyRecognizerView alloc] initWithCenter:CGPointMake([UIScreen mainScreen].bounds.size.width / 2, [UIScreen mainScreen].bounds.size.height / 2)];
         _iflyRecognizerView.delegate = vc;
     }
 
