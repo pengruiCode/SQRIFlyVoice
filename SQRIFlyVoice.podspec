@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SQRIFlyVoice"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary  	 = '讯飞语音'
   s.homepage     = "https://github.com/pengruiCode/SQRIFlyVoice.git"
   s.license      = { :type => "MIT", :file => "LICENSE" }
