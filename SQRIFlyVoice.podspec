@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SQRIFlyVoice"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary  	 = '讯飞语音'
   s.homepage     = "https://github.com/pengruiCode/SQRIFlyVoice.git"
   s.license      = { :type => "MIT", :file => "LICENSE" }
@@ -14,6 +14,9 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
 			设置讯飞语音
                    DESC
+ s.frameworks = 'Foundation', 'UIKit', 'AVFoundation', 'SystemConfiguration', 'CoreTelephony', 'AudioToolbox', 'CoreLocation', 'Contacts', 'AddressBook', 'QuartzCore', 'CoreGraphics'
+
+ s.libraries = "libz"
 
  s.dependency "SQRBaseDefineWithFunction"
 
